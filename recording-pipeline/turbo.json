@@ -1,0 +1,12 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "dev": { "persistent": true, "cache": false },
+    "build": { "dependsOn": ["^build"], "outputs": [".next/**", "dist/**"] },
+    "db:push": { "cache": false },
+    "db:generate": { "cache": false },
+    "db:migrate": { "cache": false },
+    "db:studio": { "persistent": true, "cache": false },
+    "check-types": { "dependsOn": ["^build"] }
+  }
+}

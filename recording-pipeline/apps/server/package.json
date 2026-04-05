@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@repo/db": "*",
+    "@repo/env": "*",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "hono": "^4.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.1.0"
+  }
+}

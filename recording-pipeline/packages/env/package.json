@@ -1,0 +1,12 @@
+{
+  "name": "@repo/env",
+  "version": "0.0.1",
+  "private": true,
+  "exports": {
+    "./server": "./src/server.ts",
+    "./client": "./src/client.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.0"
+  }
+}

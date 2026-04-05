@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build --filter=web",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@api_url"
+  }
+}
